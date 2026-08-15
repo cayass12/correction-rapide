@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#111111"><link rel="manifest" href="manifest.webmanifest">
+<title>Correction rapide</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header><div class="logo">✓</div><div><h1>Correction rapide</h1><p>Écris ou parle, je corrige.</p></div></header>
+  <section class="panel">
+    <div class="mode"><button class="modeBtn active" data-mode="naturel">Naturel</button><button class="modeBtn" data-mode="correct">Correct</button></div>
+    <textarea id="text" placeholder="Ex. : Je connais pas ce membre de la famille"></textarea>
+    <div class="actions">
+      <button id="mic" class="secondary">🎤 Parler</button>
+      <button id="correct" class="primary">✨ Corriger</button>
+    </div>
+  </section>
+  <section id="result" class="panel hidden">
+    <div class="resultHead"><span>Correction</span><button id="copy" class="copy">📋 Copier</button></div>
+    <div id="answer" class="answer"></div>
+  </section>
+  <section class="tip">Astuce : ajoute l’application à ton écran d’accueil pour la lancer en un clic.</section>
+</main>
+<script src="app.js"></script>
+</body></html>
